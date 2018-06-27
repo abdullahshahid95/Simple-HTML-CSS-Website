@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Login or Signup- Leaf</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<style>
+
+body{
+overflow-y: scroll;
+background: url(css/images/body.gif) repeat-x;
+font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+.header{
+width:960px;
+background-color:#fff;
+top:0;
+right: 0;
+left: 0;
+margin-right: auto;
+margin-left: auto;
+position:fixed;
+border: 1px solid #dedede;
+}
+
+li{
+list-style-type:none;
+display:inline;
+}
+
+.logo, .nav, .cart{
+display:inline-block;
+}
+
+a{text-decoration:none;
+}
+
+.cart{
+float:right;
+margin-right:5px;
+background-color:#34495E;
+color:#fff;
+padding: 3px 5px 3px 5px;
+}
+
+.cart a{
+color: #fff
+}
+
+.nav{
+float:right;
+margin-right:70px;
+}
+
+.nav li{
+margin-right:10px;
+}
+
+.nav li a{
+border: 2px solid #fff;
+padding: 5px 10px 5px 10px;
+color:#34495E;
+}
+
+.nav a:hover{
+background-color:#34495E;
+color:white;
+}
+
+.center{
+display: inline-block;
+border: 1px solid #dedede;
+height:300px;
+width:500px;
+margin-top: 100px;
+margin-left:230px;
+color: #34495E;
+}
+ .center h2{
+text-align:center;
+}
+
+.center form{
+margin-left: 100px;
+text-align:left;
+line-height:30px;
+}
+
+a.fp{
+color: #34495E;
+margin-top:10px;
+float:left;
+margin-left:50px;
+}
+
+a.nu{
+color: #34495E;
+margin-top:10px;
+margin-top:10px;
+float:right;
+margin-right:50px;
+}
+
+a.fp:hover, a.nu:hover{
+text-decoration:underline;
+}
+
+.login{
+font-size:18px;
+width:70px;
+padding:2px;
+border:1px solid #dedede;
+background-color:#34495E;
+color:#fff;
+}
+
+.login:hover{
+border:1px solid #dedede;
+background-color:#fff;
+color:#34495E;
+}
+
+#container{
+height: 100%;
+background-color:#fff;
+font-family: "Trebuchet MS", Arial, sans-serif;
+width:960px;
+margin-top:60px;
+right: 0;
+left: 0;
+margin-right: auto;
+margin-left: auto;
+
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="header">
+
+<div class="logo">
+    <a href="#"><img src="css\images\logo.png" /></a>
+</div>
+
+<div class="cart"> <a href="#" class="cart-link">Shopping Cart</a>
+   <div class="cl">&nbsp;</div>   
+      <span>Items: <strong>0</strong></span> &nbsp;&nbsp; <span>Cost: <strong>Rs0.00</strong></span> </div>
+
+<div class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="women.html">Women's</a></li>
+        <li><a href="men.html">Men's</a></li>
+        <li><a href="#">Kid's</a></li>
+        <li><a href="myaccount.html">My account</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+<div id="container">
+
+
+<div class="center">
+<h2>Login or Signup</h2>
+<form action="http://localhost/myfirstphp/logincheck.php" method="post">
+            
+           <input class="memail" name="usern" type="text" size="40" required="required" placeholder="Enter Email or Username" /><br><br>
+
+           <input class="mpass" name="userp" type="password" size="40" required="required" placeholder="Enter Password" /><br><br>
+
+           <input class="mrad" type="checkbox" />Remember me<br><br>
+
+           <input type="submit" Value="Login" class="login" />
+
+          </form>
+
+          <a href="#" class="fp"><small>Fogot password?</small></a>
+          <a href="signup.html" class="nu"><small>New user? Register here</small></a>
+</div>
+
+</div>
+  
+</body>
+</html>
